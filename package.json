@@ -2,9 +2,9 @@
   "name": "mohamed",
   "version": "2.1.0",
   "description": "-- AWESOMENESS --",
-  "main": "bot.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "canvas": "^1.6.10",
