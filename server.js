@@ -104,7 +104,7 @@ bot.on("message", message => {
       return message.channel.send("**just Ownership can on**");
     if (message.content.startsWith(prefix + "anti ban")) {
       if (!num) return message.channel.send("[1 to 3]|justnumbersend! **");
-      if (isNaN(num)) return message.channel.send("[1 to 3] |  justnumber! **");
+      if (isNaN(num)) return message.channel.send("[1 to 3] | only number! **");
       config[message.guild.id].banLimit = num;
       message.channel.send(
         `** lock = | changed: ${config[message.guild.id].banLimit} **`
@@ -112,7 +112,7 @@ bot.on("message", message => {
     }
     if (message.content.startsWith(prefix + "anti kick")) {
       if (!num) return message.channel.send(" [1 to 3]| justnumbersend!  **");
-      if (isNaN(num)) return message.channel.send("[1 to 3] |justnumber ! **");
+      if (isNaN(num)) return message.channel.send("[1 to 3] |only number ! **");
       config[message.guild.id].kickLimits = num;
       message.channel.send(
         `** lock = |changed  : ${config[message.guild.id].kickLimits}**`
@@ -122,7 +122,7 @@ bot.on("message", message => {
     if (message.content.startsWith(prefix + "anti role")) {
       if (!num) return message.channel.send("[1 to 3]| justnumbersend! **");
       if (isNaN(num))
-        return message.channel.send(" [1 to 3]| justnumbersend!**");
+        return message.channel.send(" [1 to 3]| only number!**");
       config[message.guild.id].roleCrLimits = num;
       message.channel.send(
         `** lock = |  changed: ${config[message.guild.id].roleCrLimits}**`
@@ -131,7 +131,7 @@ bot.on("message", message => {
 
     if (message.content.startsWith(prefix + "anti channel")) {
       if (!num) return message.channel.send(" [1 to 3]| justnumbersend! **");
-      if (isNaN(num)) return message.channel.send(" [1 to 3]|justnumber ! **");
+      if (isNaN(num)) return message.channel.send(" [1 to 3]|only number ! **");
       config[message.guild.id].chaCrLimit = num;
       message.channel.send(
         `** lock = | changed : ${config[message.guild.id].chaCrLimit}**`
@@ -140,7 +140,7 @@ bot.on("message", message => {
     if (message.content.startsWith(prefix + "anti time")) {
       if (!num) return message.channel.send(" ** [1 to 3]| justnumbersend! **");
       if (isNaN(num))
-        return message.channel.send(" ** [1 to 3]|justnumber ! **");
+        return message.channel.send(" ** [1 to 3]|only number ! **");
       config[message.guild.id].time = num;
       message.channel.send(
         `** lock = | changed: ${config[message.guild.id].time}**`
@@ -196,7 +196,7 @@ bot.on("channelDelete", async channel => {
         .ban()
         .catch(e =>
           channel.guild.owner.send(
-            `**⇏ | ${entry.username} he cleaned alot of rooms **`
+            `**⇏ | ${entry.username}tried to delete many channels **`
           )
         );
       anti[channel.guild.id + entry.id].actions = "0";
@@ -266,7 +266,7 @@ bot.on("channelCreate", async channel => {
         .ban()
         .catch(e =>
           channel.guild.owner.send(
-            `**⇏ | ${entry.username}   he made alot of channels**`
+            `**⇏ | ${entry.username}  tried to create many channels**`
           )
         );
       anti[channel.guild.id + entry.id].actions = "0";
@@ -334,7 +334,7 @@ bot.on("roleDelete", async channel => {
         .ban()
         .catch(e =>
           channel.guild.owner.send(
-            `**⇏ | ${entry.username} ‎ he made alot of roles**`
+            `**⇏ | ${entry.username} ‎tried to create many roles**`
           )
         );
       anti[channel.guild.id + entry.id].actions = "0";
@@ -401,7 +401,7 @@ bot.on("roleCreate", async channel => {
         .ban()
         .catch(e =>
           channel.guild.owner.send(
-            `**⇏ | ${entry.username}he cleaned alot of roles **`
+            `**⇏ | ${entry.username}tried to delete many roles **`
           )
         );
       anti[channel.guild.id + entry.id].actions = "0";
@@ -463,7 +463,7 @@ bot.on("guildBanAdd", async (guild, user) => {
         .get(entry.id)
         .ban()
         .catch(e =>
-          guild.owner.send(`**⇏ | ${entry.username} he tried everone ban **`)
+          guild.owner.send(`**⇏ | ${entry.username}  tried to ban members**`)
         );
       anti[guild.id + entry.id].actions = 0;
       fs.writeFile("./config.json", JSON.stringify(config, null, 2), function(
@@ -525,7 +525,7 @@ bot.on("guildKickAdd", async (guild, user) => {
         .get(entry.id)
         .ban()
         .catch(e =>
-          guild.owner.send(`**⇏ | ${entry.username} he tried everone kick**`)
+          guild.owner.send(`**⇏ | ${entry.username}  tried to kick members**`)
         );
       anti[guild.id + entry.id].actions = 0;
       fs.writeFile("./config.json", JSON.stringify(config, null, 2), function(
@@ -593,7 +593,7 @@ bot.on("guildMemberRemove", async member => {
           .get(entry.id)
           .ban()
           .catch(e =>
-            member.owner.send(`**⇏ | ${entry.username} he tried everone kick**`)
+            member.owner.send(`**⇏ | ${entry.username} tried to kick members**`)
           );
         anti[member.guild.id + entry.id].actions = 0;
         fs.writeFile("./config.json", JSON.stringify(config, null, 2), function(
@@ -730,4 +730,4 @@ bot.on("message", async console => {
   }
 });
 //////============token================////
-bot.login("NzM2MTk0OTcyNDM2NTI5MjAy.XxrQ_w.0TG9jNmN9fq7K9V5JZrbitLwjYk");
+bot.login("NzM2MTk0OTcyNDM2NTI5MjAy.XxrQ_w.6il0wEhjgZIlPs7HgrbBReS0xUM");
