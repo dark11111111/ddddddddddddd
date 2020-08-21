@@ -52,6 +52,7 @@ bot.on("message", message => {
 ** a!anti time **
 
 ** a!inv **
+____________________________
 `);
     message.channel.sendEmbed(embed);
   }
@@ -710,7 +711,7 @@ bot.on("message", async console => {
 
       .setTitle("{            **Bot Info**            }")
 
-      .addField("**Name** ", "Anti Bot#3040")
+      .addField("**Name** ", "Security Bot#3040")
 
       .addField("**ID** ", "667309579675369482")
 
