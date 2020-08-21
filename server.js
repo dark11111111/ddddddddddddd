@@ -52,7 +52,7 @@ bot.on("message", message => {
 ** a!anti time **
 
 ** a!inv **
-____________________________
+______________________________________
 `);
     message.channel.sendEmbed(embed);
   }
