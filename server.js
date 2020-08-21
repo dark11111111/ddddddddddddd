@@ -26,12 +26,12 @@ bot.on("ready", () => console.log("🤖Ready Bot In Online🤖"));
 bot.on("message", message => {
   if (message.content === "a!help") {
     const embed = new Discord.RichEmbed()
-      .setColor("BLACK")
+      .setColor("BLUE")
       .setImage(
-        "https://images-ext-2.discordapp.net/external/u9BEQ5MkPfUPyg1rEQIOUuSclkJQQ4VGJDduOS3LJCg/https/media.discordapp.net/attachments/732894894280146984/732899108712611860/image0.gif"
+        "https://cdn.discordapp.com/attachments/677955544799117323/746497297382244382/image0.png"
       )
       .setThumbnail(
-        "https://images-ext-2.discordapp.net/external/u9BEQ5MkPfUPyg1rEQIOUuSclkJQQ4VGJDduOS3LJCg/https/media.discordapp.net/attachments/732894894280146984/732899108712611860/image0.gif"
+        "https://cdn.discordapp.com/attachments/677955544799117323/746497297382244382/image0.png"
       ).setDescription(`**COMAND HELP MENU**
 
 
@@ -681,13 +681,13 @@ bot.on("message", message => {
         "**Please Do not type bot commands in bot private chat**"
       );
     let embed = new Discord.RichEmbed()
-      .setColor("BLACK")
+      .setColor("BLUE")
       .setTitle("• BOT INVITE •")
       .setURL(
         "https://discord.com/api/oauth2/authorize?client_id=736194972436529202&permissions=8&scope=bot"
       ) // Type Your Link here after ''
       .setThumbnail(
-        "https://images-ext-2.discordapp.net/external/u9BEQ5MkPfUPyg1rEQIOUuSclkJQQ4VGJDduOS3LJCg/https/media.discordapp.net/attachments/732894894280146984/732899108712611860/image0.gif"
+        "https://cdn.discordapp.com/attachments/677955544799117323/746497297382244382/image0.png"
       )
 
       .setFooter("Anti Bot#3040", message.author.avatarURL);
@@ -706,7 +706,7 @@ bot.on("message", async console => {
 
     var embed = new Discord.RichEmbed()
 
-      .setColor("BLACK")
+      .setColor("BLUE")
 
       .setTitle("{            **Bot Info**            }")
 
@@ -721,7 +721,7 @@ bot.on("message", async console => {
       .addField("**Owner Bot** ", "DarkMan#0001")
 
       .setThumbnail(
-        "https://images-ext-2.discordapp.net/external/u9BEQ5MkPfUPyg1rEQIOUuSclkJQQ4VGJDduOS3LJCg/https/media.discordapp.net/attachments/732894894280146984/732899108712611860/image0.gif"
+        "https://cdn.discordapp.com/attachments/677955544799117323/746497297382244382/image0.png"
       );
 
     console.channel.send(embed);
