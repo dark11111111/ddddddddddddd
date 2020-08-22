@@ -691,7 +691,7 @@ bot.on("message", message => {
         "https://cdn.discordapp.com/attachments/677955544799117323/746497297382244382/image0.png"
       )
 
-      .setFooter("Anti Bot#3040", message.author.avatarURL);
+      .setFooter("Security Bot#3040", message.author.avatarURL);
     message.channel.sendEmbed(embed);
   }
 });
