@@ -730,5 +730,27 @@ bot.on("message", async console => {
     console;
   }
 });
+
+// ======== { • anti spam • }======== //
+
+const AntiSpam = require("discord-anti-spam");
+const antiSpam = new AntiSpam({
+  warnThreshold: 3, // Amount of messages sent in a row that will cause a warning.
+  kickThreshold: 7, // Amount of messages sent in a row that will cause a ban.
+  banThreshold: 7, // Amount of messages sent in a row that will cause a ban.
+  maxInterval: 2000, // Amount of time (in milliseconds) in which messages are considered spam.
+  warnMessage: "{@user}, please stop spamming .", // Message that will be sent in chat upon warning a user.
+  kickMessage: "{user_tag}, kicked for spam .", // Message that will be sent in chat upon kicking a user.
+  banMessage: "{user_tag}, banned for spam .", // Message that will be sent in chat upon banning a user.
+  maxDuplicatesWarning: 7, // Amount of duplicate messages that trigger a warning.
+  maxDuplicatesKick: 10, // Amount of duplicate messages that trigger a warning.
+  maxDuplicatesBan: 12, // Amount of duplicate messages that trigger a warning.
+  exemptPermissions: ["ADMINISTRATOR"], // Bypass users with any of these permissions.
+  ignoreBots: true, // Ignore bot messages.
+  verbose: true, // Extended Logs from module.
+  ignoredUsers: [] // Array of User IDs that get ignored.
+  // And many more options... See the documentation.
+});
+
 //////============token================////
 bot.login("NzM2MTk0OTcyNDM2NTI5MjAy.XxrQ_w.jkkT7afZpw2VUXyeaoPmAZhJEcU");
