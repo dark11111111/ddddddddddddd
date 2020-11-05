@@ -753,4 +753,4 @@ bot antiSpam = new AntiSpam({
 });
 
 //////============token================////
-bot.login("NzM2MTk0OTcyNDM2NTI5MjAy.XxrQ_w.JfHmx8kshyvQtGNjYgVJRToA7to");
+bot.login("NzM2MTk0OTcyNDM2NTI5MjAy.XxrQ_w.DePUUycjTFs1nySesI8sxH60dD8");
