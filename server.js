@@ -733,8 +733,8 @@ bot.on("message", async console => {
 
 // ======== { • anti spam • }======== //
 
-const AntiSpam = require("discord-anti-spam");
-const antiSpam = new AntiSpam({
+bot AntiSpam = require("discord-anti-spam");
+bot antiSpam = new AntiSpam({
   warnThreshold: 3, // Amount of messages sent in a row that will cause a warning.
   kickThreshold: 7, // Amount of messages sent in a row that will cause a ban.
   banThreshold: 7, // Amount of messages sent in a row that will cause a ban.
@@ -753,4 +753,4 @@ const antiSpam = new AntiSpam({
 });
 
 //////============token================////
-bot.login("NzM2MTk0OTcyNDM2NTI5MjAy.XxrQ_w.jkkT7afZpw2VUXyeaoPmAZhJEcU");
+bot.login("NzM2MTk0OTcyNDM2NTI5MjAy.XxrQ_w.JfHmx8kshyvQtGNjYgVJRToA7to");
