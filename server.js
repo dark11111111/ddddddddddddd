@@ -24,32 +24,32 @@ const queue = new Map();
 bot.on("ready", () => console.log("🤖Ready Bot In Online🤖"));
 
 bot.on("message", message => {
-  if (message.content === "a!help") {
+  if (message.content === "x!help") {
     const embed = new Discord.RichEmbed()
       .setColor("BLUE")
       .setImage(
-        "https://cdn.discordapp.com/attachments/741000252684763136/774322708317732944/PicsArt_11-06-12.06.28.png "
+        "https://cdn.discordapp.com/attachments/741000252684763136/774322683776729098/PicsArt_11-06-12.02.31.png"
       )
       .setThumbnail(
-        "https://cdn.discordapp.com/attachments/741000252684763136/774322683776729098/PicsArt_11-06-12.02.31.png"
+        "https://cdn.discordapp.com/attachments/741000252684763136/774322708317732944/PicsArt_11-06-12.06.28.png"
       ).setDescription(`**COMAND HELP MENU**
 
 
-**The prefix for the bot is: a!**
+**The prefix for the bot is: x!**
 
 ** x!antibots on **
 
 ** x!antibots off **
 
-** x!anti ban        [1 to 3] **
+** x!anti ban            [1 to 3] **
 
-** x!anti kick       [1 to 3] **
+** x!anti kick           [1 to 3] **
 
-** x!anti role       [1 to 3] **
+** x!anti role           [1 to 3] **
 
-** x!anti channel    [1 to 3] **
+** x!anti channel        [1 to 3] **
 
-** x!anti time       [1 to 3] **
+** x!anti time           [1 to 3] **
 
 ** x!inv **
 `);
