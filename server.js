@@ -26,7 +26,7 @@ bot.on("ready", () => console.log("🤖Ready Bot In Online🤖"));
 bot.on("message", message => {
   if (message.content === "x!help") {
     const embed = new Discord.RichEmbed()
-      .setColor("BLUE")
+      .setColor("#0a1ddf")
       .setImage(
         "https://cdn.discordapp.com/attachments/741000252684763136/774322683776729098/PicsArt_11-06-12.02.31.png"
       )
@@ -681,7 +681,7 @@ bot.on("message", message => {
         "**Please Do not type bot commands in bot private chat**"
       );
     let embed = new Discord.RichEmbed()
-      .setColor("BLUE")
+      .setColor("#0a1ddf")
       .setTitle("• BOT INVITE •")
       .setURL(
         "https://discord.com/api/oauth2/authorize?client_id=737370841460768859&permissions=8&scope=bot"
@@ -706,7 +706,7 @@ bot.on("message", async console => {
 
     var embed = new Discord.RichEmbed()
 
-      .setColor("BLUE")
+      .setColor("#0a1ddf")
 
       .setTitle("{            **Bot Info**            }")
 
