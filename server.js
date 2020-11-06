@@ -17,7 +17,7 @@ const bannedwords = ["@here", "@everyone"];
 
 const ytdl = require("ytdl-core");
 
-const prefix = "a!";
+const prefix = "x!";
 
 const queue = new Map();
 
@@ -28,31 +28,30 @@ bot.on("message", message => {
     const embed = new Discord.RichEmbed()
       .setColor("BLUE")
       .setImage(
-        "https://cdn.discordapp.com/attachments/677955544799117323/746497297382244382/image0.png"
+        "https://cdn.discordapp.com/attachments/741000252684763136/774322708317732944/PicsArt_11-06-12.06.28.png "
       )
       .setThumbnail(
-        "https://cdn.discordapp.com/attachments/677955544799117323/746497297382244382/image0.png"
+        "https://cdn.discordapp.com/attachments/741000252684763136/774322683776729098/PicsArt_11-06-12.02.31.png"
       ).setDescription(`**COMAND HELP MENU**
 
 
 **The prefix for the bot is: a!**
 
-** a!antibots on **
+** x!antibots on **
 
-** a!antibots off **
+** x!antibots off **
 
-** a!anti ban [1 to 3] **
+** x!anti ban        [1 to 3] **
 
-** a!anti kick [1 to 3] **
+** x!anti kick       [1 to 3] **
 
-** a!anti role [1 to 3] **
+** x!anti role       [1 to 3] **
 
-** a!anti channel[1 to 3] **
+** x!anti channel    [1 to 3] **
 
-** a!anti time **
+** x!anti time       [1 to 3] **
 
-** a!inv **
-______________________________________
+** x!inv **
 `);
     message.channel.sendEmbed(embed);
   }
@@ -72,7 +71,7 @@ bot.on("ready", () => {
 
 
 bot.on("ready", () => {
-  bot.user.setActivity("a!help It's time to secure your server!", {
+  bot.user.setActivity("x!help It's time to secure your server!", {
     type: "PLAYING"
   });
   bot.user.setStatus();
@@ -676,7 +675,7 @@ fs.writeFile("./antibot.json", JSON.stringify(antibots), err => {
 });
 //////===============linke bot========================\\\\\
 bot.on("message", message => {
-  if (message.content === "a!inv") {
+  if (message.content === "x!inv") {
     if (!message.channel.guild)
       return message.reply(
         "**Please Do not type bot commands in bot private chat**"
@@ -685,13 +684,13 @@ bot.on("message", message => {
       .setColor("BLUE")
       .setTitle("• BOT INVITE •")
       .setURL(
-        "https://discord.com/api/oauth2/authorize?client_id=736194972436529202&permissions=8&scope=bot"
+        "https://discord.com/api/oauth2/authorize?client_id=737370841460768859&permissions=8&scope=bot"
       ) // Type Your Link here after ''
       .setThumbnail(
-        "https://cdn.discordapp.com/attachments/677955544799117323/746497297382244382/image0.png"
+        "https://cdn.discordapp.com/attachments/741000252684763136/774322708317732944/PicsArt_11-06-12.06.28.png"
       )
 
-      .setFooter("Security Bot#3040", message.author.avatarURL);
+      .setFooter(" ™ Security #3040", message.author.avatarURL);
     message.channel.sendEmbed(embed);
   }
 });
@@ -700,7 +699,7 @@ bot.on("message", message => {
 
 bot.on("message", async console => {
   const mm = console.mentions.members.first() || console.member;
-  if (console.content === "a!about") {
+  if (console.content === "x!about") {
     var user = console.guild.member(
       console.mentions.members.first() || console.author
     );
@@ -711,7 +710,7 @@ bot.on("message", async console => {
 
       .setTitle("{            **Bot Info**            }")
 
-      .addField("**Name** ", "Security Bot#3040")
+      .addField("**Name** ", " ™ Security #3040")
 
       .addField("**ID** ", "667309579675369482")
 
@@ -719,10 +718,10 @@ bot.on("message", async console => {
 
       .addField("**Users** ", `${bot.users.size}`)
 
-      .addField("**Owner Bot** ", "DarkMan#0001")
+      .addField("**Owner Bot** ", "–•™Mr.X™•–#0007")
 
       .setThumbnail(
-        "https://cdn.discordapp.com/attachments/677955544799117323/746497297382244382/image0.png"
+        "https://cdn.discordapp.com/attachments/741000252684763136/774322708317732944/PicsArt_11-06-12.06.28.png"
       );
 
     console.channel.send(embed);
@@ -733,8 +732,8 @@ bot.on("message", async console => {
 
 // ======== { • anti spam • }======== //
 
-bot AntiSpam = require("discord-anti-spam");
-bot antiSpam = new AntiSpam({
+bot. AntiSpam = require("discord-anti-spam");
+bot. antiSpam = new AntiSpam({
   warnThreshold: 3, // Amount of messages sent in a row that will cause a warning.
   kickThreshold: 7, // Amount of messages sent in a row that will cause a ban.
   banThreshold: 7, // Amount of messages sent in a row that will cause a ban.
@@ -753,4 +752,4 @@ bot antiSpam = new AntiSpam({
 });
 
 //////============token================////
-bot.login("NzM2MTk0OTcyNDM2NTI5MjAy.XxrQ_w.DePUUycjTFs1nySesI8sxH60dD8");
+bot.login("NzM3MzcwODQxNDYwNzY4ODU5.Xx8YHA.lOR4Sz17Mv0hooa8OxOuJOQcqw4");
