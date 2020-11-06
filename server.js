@@ -26,7 +26,7 @@ bot.on("ready", () => console.log("🤖Ready Bot In Online🤖"));
 bot.on("message", message => {
   if (message.content === "x!help") {
     const embed = new Discord.RichEmbed()
-      .setColor("#0a1ddf")
+      .setColor("#1d1dff")
       .setImage(
         "https://cdn.discordapp.com/attachments/741000252684763136/774322683776729098/PicsArt_11-06-12.02.31.png"
       )
@@ -47,11 +47,13 @@ bot.on("message", message => {
 
 ** x!anti role           [1 to 3] **
 
-** x!anti channel        [1 to 3] **
+** x!anti channel      [1 to 3] **
 
 ** x!anti time           [1 to 3] **
 
-** x!inv **
+** x!inv ** 
+
+**x!about**
 `);
     message.channel.sendEmbed(embed);
   }
@@ -681,7 +683,7 @@ bot.on("message", message => {
         "**Please Do not type bot commands in bot private chat**"
       );
     let embed = new Discord.RichEmbed()
-      .setColor("#0a1ddf")
+      .setColor("#1d1dff")
       .setTitle("• BOT INVITE •")
       .setURL(
         "https://discord.com/api/oauth2/authorize?client_id=737370841460768859&permissions=8&scope=bot"
@@ -690,7 +692,7 @@ bot.on("message", message => {
         "https://cdn.discordapp.com/attachments/741000252684763136/774322708317732944/PicsArt_11-06-12.06.28.png"
       )
 
-      .setFooter(" ™ Security #3040", message.author.avatarURL);
+      .setFooter(" ™ Security #6600", message.author.avatarURL);
     message.channel.sendEmbed(embed);
   }
 });
@@ -706,11 +708,11 @@ bot.on("message", async console => {
 
     var embed = new Discord.RichEmbed()
 
-      .setColor("#0a1ddf")
+      .setColor("#1d1dff")
 
       .setTitle("{            **Bot Info**            }")
 
-      .addField("**Name** ", " ™ Security #3040")
+      .addField("**Name** ", " ™ Security #6600")
 
       .addField("**ID** ", "667309579675369482")
 
