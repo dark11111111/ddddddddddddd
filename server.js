@@ -720,7 +720,7 @@ bot.on("message", async console => {
 
       .addField("**Users** ", `${bot.users.size}`)
 
-      .addField("**Owner Bot** ", "–•™Mr.X™•–#0007")
+      .addField("**Owner Bot** ", "Dark Man#0001")
 
       .setThumbnail(
         "https://cdn.discordapp.com/attachments/741000252684763136/774322708317732944/PicsArt_11-06-12.06.28.png"
@@ -733,4 +733,4 @@ bot.on("message", async console => {
 });
 
 //////============token================////
-bot.login("NzM3MzcwODQxNDYwNzY4ODU5.Xx8YHA.lOR4Sz17Mv0hooa8OxOuJOQcqw4");
+bot.login("NzM3MzcwODQxNDYwNzY4ODU5.Xx8YHA.BJxBQoco_QXp8jKtlcFu-9_zCig");
