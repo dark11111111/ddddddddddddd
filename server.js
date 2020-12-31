@@ -733,4 +733,4 @@ bot.on("message", async console => {
 });
 
 //////============token================////
-bot.login("NzkzODk1ODk3MTk2MjY1NDgz.X-y7Kw.m35FQ1eDnY85_63e2pkunf_CcgA");
+bot.login("NzkzODk1ODk3MTk2MjY1NDgz.X-y7Kw.3kNvFl2opZGEnKU5BhMZqX4897M");
